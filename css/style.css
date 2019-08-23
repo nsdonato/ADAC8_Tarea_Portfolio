@@ -134,9 +134,7 @@ img {
   width: 45%;
 }
 
-a{
+a, a:visited{
   text-decoration: none;
-}
-a:visited{
   color: #ffffff;
 }
