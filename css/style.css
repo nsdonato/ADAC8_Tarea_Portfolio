@@ -125,9 +125,9 @@ img {
 }
 
 .guion_about {
-  width: 78px;
+  width: 70px;
   border-bottom: 2px solid #ffffff;
-  margin-left: 46%;
+  margin: 0 auto;
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
