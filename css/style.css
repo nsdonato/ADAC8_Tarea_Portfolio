@@ -12,10 +12,36 @@ body {
 }
 
 .header {
+  position: fixed;
   background-color: #343a40;
   height: 80px;
   text-align: left;
   font-weight: bolder;
+  width: 100%;
+}
+
+#menu {
+  padding-top: 30px;
+}
+ul#menu li {
+  display:inline;
+  padding-top: 15px;
+}
+.ada {
+  padding-left: 300px;
+  font-weight: 800;
+}
+
+.btn{
+  display: inline-block;
+  padding-left: 100px;
+  text-align: right;
+  font-weight: 400;
+  position: relative;
+}
+
+.portfolio{
+  padding-left: 350px;
 }
 
 img {
@@ -34,13 +60,6 @@ p {
 a, a:visited{
   text-decoration: none;
   color: #ffffff;
-}
-
-h1.ada {
-  margin-left: 250px;
-  padding-top: 25px;
-  margin-right: 300px;
-  font-weight: 500;
 }
 
 h1.htmlycss {
