@@ -18,30 +18,40 @@ body {
   text-align: left;
   font-weight: bolder;
   width: 100%;
+  top: 0;
 }
 
 #menu {
-  padding-top: 30px;
+  padding-top: 25px
 }
+
 ul#menu li {
   display:inline;
-  padding-top: 15px;
 }
 .ada {
   padding-left: 300px;
   font-weight: 800;
+  padding-top: 25px;
 }
 
 .btn{
-  display: inline-block;
-  padding-left: 100px;
-  text-align: right;
+  position: absolute;
   font-weight: 400;
-  position: relative;
+  top: 0;
+  right: 30px;
+  padding-top: 25px
 }
 
-.portfolio{
-  padding-left: 350px;
+.contacto {
+  right: 10%;
+}
+
+.about {
+  right: 15%;
+}
+
+.portfolio {
+  right: 25%;
 }
 
 img {
@@ -71,6 +81,7 @@ h1.htmlycss {
   text-align: center;
   padding-top: 60px;
   padding-bottom: 100px;
+  padding-top: 180px;
 }
 
 .avatar {
