@@ -6,172 +6,169 @@
 }
 
 body {
-  text-align: center;
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
 }
 
-.header {
-  position: fixed;
+#nav {
   background-color: #343a40;
-  height: 80px;
-  text-align: left;
   font-weight: bolder;
-  width: 100%;
+  height: 80px;
+  position: fixed;
+  text-align: left;
   top: 0;
+  width: 100%;
 }
 
-#menu {
-  padding-top: 25px
-}
+#nav__menu { padding-top: 25px; }
+ul#nav__menu li { display: inline-block; }
 
-ul#menu li {
-  display:inline;
-}
-.ada {
-  padding-left: 300px;
+.nav__menu__ada {
   font-weight: 800;
-  padding-top: 25px;
+  padding-left: 250px;
 }
 
-.btn{
-  position: absolute;
+.nav__menu__btn {
   font-weight: 400;
+  padding-top: 25px;
+  position: absolute;
   top: 0;
-  right: 30px;
-  padding-top: 25px
 }
 
-.contacto {
-  right: 10%;
-}
+.nav__menu__contact { right: 80px; }
+.nav__menu__about { right: 240px; }
+.nav__menu__portfolio { right: 360px; }
 
-.about {
-  right: 15%;
-}
-
-.portfolio {
-  right: 25%;
-}
-
-img {
-  width: 100%;
-}
-
-h1,
-p {
-  display: inline-block;
-}
-
-p {
-  margin-right: 50px;
-}
-
-a, a:visited{
-  text-decoration: none;
+a,
+a:visited {
   color: #ffffff;
+  text-decoration: none;
 }
 
-h1.htmlycss {
-  font-size: 63px;
-}
-
-.main {
+#main {
   background-color: #1abc9c;
-  text-align: center;
-  padding-top: 60px;
   padding-bottom: 100px;
-  padding-top: 180px;
+  padding-top: 150px;
+  text-align: center;
 }
 
-.avatar {
-  width: 15%;
-}
+img { width: 100%; }
 
-h6 {
-  font-size: 18px;
-}
+.main__title { font-size: 63px; }
+.main__avatar { width: 15%; }
+.main__subtitle { font-size: 18px; }
 
-#portfolio{
-  padding-top: 20px;
+#portfolio {
+  margin-bottom: 50px;
   padding-bottom: 50px;
+  padding-top: 20px;
+  text-align: center;
 }
 
-#portfolio,
-.cabin,
-.cake,
-.circus,
-.game,
-.safe,
-.submarine {
-  color: #000000;
-}
+#portfolio { color: #000000; }
 
-.inline,
-.cabin,
-.cake,
-.circus,
-.game,
-.safe,
-.submarine {
+.portfolio__cabin,
+.portfolio__cake,
+.portfolio__circus,
+.portfolio__game,
+.portfolio__safe,
+.portfolio__submarine {
   display: inline-block;
-}
-
-.cabin,
-.cake,
-.circus,
-.game,
-.safe,
-.submarine {
-  margin: 0;
-  width: 200px;
   margin-right: 20px;
   margin-top: 30px;
+  width: 200px;
 }
 
-.txt_portfolio {
-  padding-top: 15px;
-  padding-bottom: 5px;
+.portfolio__title { padding-top: 15px; }
+
+.portfolio__title,
+.about__title,
+.contact__title {
+  font-weight: 900;
 }
 
-.txt_portfolio,
-.guion,
-.txt_about {
-  font-weight: 800;
-}
-
-.guion {
-  width: 78px;
+.portfolio__guion,
+.contact__guion {
   border-bottom: 2px solid #000000;
-  margin-left: 47%;
-  padding-bottom: 5px;
+}
+
+.portfolio__guion,
+.about__guion,
+.contact__guion {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+  width: 70px;
 }
 
 #about {
+  background-color: #1abc9c;
+  height: 300px;
+  margin-bottom: 20px;
+  padding-bottom: 40px;
   text-align: center;
   width: 100%;
-  height: 300px;
-  background-color: #1abc9c;
 }
 
-.txt_about {
-  padding-top: 30px;
-}
+.about__guion { border-bottom: 2px solid #ffffff; }
 
-.guion_about {
-  width: 70px;
-  border-bottom: 2px solid #ffffff;
-  margin: 0 auto;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-}
-
-.txt_about_1, .txt_about_2 {
+.about__text_1,
+.about__text_2 {
   text-align: left;
-}
-.txt_about_2{
-  vertical-align: top;
-}
-.txt_about_1, .txt_about_2 {
   width: 25%;
+  display: inline-block;
 }
+
+.about__text_2 { vertical-align: top; }
+
+.about__title,
+.contact__title {
+  padding-top: 50px;
+}
+
+#contact {
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+.contact__header {
+  margin-bottom: 55px;
+  text-align: center;
+}
+
+.contact__guion { border-bottom: 2px solid #000000; }
+
+.contact__form {
+  margin: 0 auto;
+  width: 500px;
+}
+
+form > input[type="text"],
+input[type="email"],
+textarea {
+  border: none;
+  border-bottom: 1px solid #e8e8e8;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  margin-bottom: 20px;
+  padding-bottom: 25px;
+  width: 500px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea::placeholder {
+  font-weight: 800;
+}
+
+input[type="submit"] {
+  background-color: #53bd9d;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  padding: 15px;
+}
+
+input[type="submit"]:hover { background-color: #328269; }

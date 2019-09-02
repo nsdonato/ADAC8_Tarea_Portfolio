@@ -1,63 +1,90 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Mi CV online</title>
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Mi CV online</title>
+</head>
 
-    <div class="header">
-      <ul id="menu">
-        <li class="ada">ADA ONLINE</li>
-        <li class="btn portfolio"><a href="#portfolio">PORTFOLIO</a></li>
-        <li class="btn about"><a href="#about">ABOUT</a></li>
-        <li class="btn contact">CONTACT</li>
-      </ul>
-    </div>
+<body>
 
-    <div class="main">
-      <img class="avatar" src="./image/avatar.png" alt="" />
-      <div>
-        <h1 class="htmlycss">HTML Y CSS</h1>
-        <h6>Aprendiendo las bases de front end</h6>
+  <div id="nav">
+    <ul id="nav__menu">
+      <li class="nav__menu__ada">ADA ONLINE</li>
+      <li class="nav__menu__btn nav__menu__portfolio">
+        <a href="#portfolio">PORTFOLIO</a>
+      </li>
+      <li class="nav__menu__btn nav__menu__about">
+        <a href="#about">ABOUT</a>
+      </li>
+      <li class="nav__menu__btn nav__menu__contact">
+        <a href="#contact">CONTACT</a>
+      </li>
+    </ul>
+  </div>
+
+  <div id="main">
+    <img class="main__avatar" src="./image/avatar.png" alt="" />
+    <div>
+      <h1 class="main__title">HTML Y CSS</h1>
+      <h6 class="main__subtitle">Aprendiendo las bases de front end</h6>
+    </div>
+  </div>
+
+  <div id="portfolio">
+    <h1 class="portfolio__title">PORTFOLIO</h1>
+    <div class="portfolio__guion"></div>
+    <div>
+      <div class="portfolio__cabin">
+        <img src="./image/cabin.png" alt="" />
+      </div>
+      <div class="portfolio__cake"><img src="./image/cake.png" alt="" /></div>
+      <div class="portfolio__circus">
+        <img src="./image/circus.png" alt="" />
       </div>
     </div>
-    <div id="portfolio">
-      <h1 class="txt_portfolio">PORTFOLIO</h1>
-      <br />
-      <div class="guion"></div>
-      <div>
-        <div class="inline cabin"><img src="./image/cabin.png" alt="" /></div>
-        <div class="inline cake"><img src="./image/cake.png" alt="" /></div>
-        <div class="inline circus"><img src="./image/circus.png" alt="" /></div>
-      </div>
-      <div>
-        <div class="inline game"><img src="./image/game.png" alt="" /></div>
-        <div class="inline safe"><img src="./image/safe.png" alt="" /></div>
-        <div class="inline submarine">
-          <img src="./image/submarine.png" alt="" />
-        </div>
+    <div>
+      <div class="portfolio__game"><img src="./image/game.png" alt="" /></div>
+      <div class="portfolio__safe"><img src="./image/safe.png" alt="" /></div>
+      <div class="portfolio__submarine">
+        <img src="./image/submarine.png" alt="" />
       </div>
     </div>
-    <div id="about">
-      <h1 class="txt_about">ABOUT</h1>
-      <br />
-      <div class="guion_about"></div>
-      <div class="inline txt_about_1">
-        Freelancer is a free bootstrap theme <br />created by Start Bootstrap.
-        The<br />
-        download includes the complete source <br />files including HTML, CSS,
-        and<br />
-        JavaScript as well as optional SASS <br />stylesheets for easy
-        customization.
-      </div>
-      <div class="inline txt_about_2">
-        You can create your own custom avatar <br />for the masthead, change the
-        icon in the <br />dividers, and add your email address to <br />the
-        contact form to make it fully <br />functional!
-      </div>
+  </div>
+
+  <div id="about">
+    <h1 class="about__title">ABOUT</h1>
+    <div class="about__guion"></div>
+    <div class="about__text_1">
+      Freelancer is a free bootstrap theme <br />created by Start Bootstrap.
+      The<br />
+      download includes the complete source <br />files including HTML, CSS,
+      and<br />
+      JavaScript as well as optional SASS <br />stylesheets for easy
+      customization.
     </div>
-  </body>
+    <div class="about__text_2">
+      You can create your own custom avatar <br />for the masthead, change the
+      icon in the <br />dividers, and add your email address to <br />the
+      contact form to make it fully <br />functional!
+    </div>
+  </div>
+
+  
+  <div id="contact">
+    <div class="contact__header">
+      <h1 class="contact__title">CONTACT ME</h1>
+      <div class="contact__guion"></div>
+    </div>
+    <form class="contact__form" action="/contact" method="post">
+      <input type="text" name="name" id="name" placeholder="Name" />
+      <input type="email" name="email" id="email" placeholder="Email Addres" />
+      <input type="text" name="phone" id="phone" placeholder="Phone Number" />
+      <textarea rows="6" placeholder="Message"></textarea>
+      <input type="submit" value="Send" />
+    </form>
+  </div>
+</body>
+
 </html>
