@@ -20,8 +20,8 @@ body {
   width: 100%;
 }
 
+#nav_mobile { display: none; }
 #nav__menu { padding-top: 25px; }
-ul#nav__menu li { display: inline-block; }
 
 .nav__menu__ada {
   font-weight: 800;
@@ -35,9 +35,16 @@ ul#nav__menu li { display: inline-block; }
   top: 0;
 }
 
-.nav__menu__contact { right: 80px; }
-.nav__menu__about { right: 240px; }
-.nav__menu__portfolio { right: 360px; }
+.menu__contact { right: 80px; }
+.menu__about { right: 240px; }
+.menu__portfolio { right: 360px; }
+.menu__menu { display: none; }
+
+.menu__portfolio,
+.menu__about,
+.menu__contact {
+  display: inline-block;
+}
 
 a,
 a:visited {
@@ -162,7 +169,7 @@ textarea::placeholder {
   font-weight: 800;
 }
 
-input[type="submit"] {
+.btn__green {
   background-color: #53bd9d;
   border: none;
   border-radius: 8px;
@@ -172,3 +179,29 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover { background-color: #328269; }
+
+@media (max-width: 600px){
+  .menu__portfolio,
+  .menu__about,
+  .menu__contact {
+    display: none;
+  }
+
+  .menu__menu{
+    display: block;
+    background-color: #328269;
+    color: #ffffff;
+    right: 10px;
+    top: 10px;
+  }
+
+  .about__text_1, .about__text_2{
+    width: 45%;
+    font-size: 13px;
+  }
+
+  form{
+    width: 80%;
+    margin: 0 auto;
+  }
+}
