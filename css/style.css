@@ -61,6 +61,7 @@ a:visited {
 
 img { width: 100%; }
 
+
 .main__title { font-size: 63px; }
 .main__avatar { width: 15%; }
 .main__subtitle { font-size: 18px; }
@@ -83,7 +84,10 @@ img { width: 100%; }
   display: inline-block;
   margin-right: 20px;
   margin-top: 30px;
-  width: 200px;
+}
+
+.w_33 {
+  width: 25%;
 }
 
 .portfolio__title { padding-top: 15px; }
@@ -204,4 +208,9 @@ input[type="submit"]:hover { background-color: #328269; }
     width: 80%;
     margin: 0 auto;
   }
+
+  .w_33 {
+    width: 33%;
+  }
+
 }
