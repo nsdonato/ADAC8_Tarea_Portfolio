@@ -59,7 +59,10 @@ a:visited {
   text-align: center;
 }
 
-img { width: 100%; }
+img { 
+  width: 350px;
+  height: 250px; 
+}
 
 
 .main__title { font-size: 63px; }
@@ -70,27 +73,24 @@ img { width: 100%; }
   margin-bottom: 50px;
   padding-bottom: 50px;
   padding-top: 20px;
-  text-align: center;
+  /* text-align: center; */
 }
 
 #portfolio { color: #000000; }
 
-.portfolio__cabin,
-.portfolio__cake,
-.portfolio__circus,
-.portfolio__game,
-.portfolio__safe,
-.portfolio__submarine {
-  display: inline-block;
-  margin-right: 20px;
-  margin-top: 30px;
+img{
+  margin-bottom: 30px;
+}
+.portfolio__flex_content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.w_33 {
-  width: 25%;
+.portfolio__title { 
+  padding-top: 15px; 
+  text-align: center; 
 }
-
-.portfolio__title { padding-top: 15px; }
 
 .portfolio__title,
 .about__title,
@@ -208,9 +208,4 @@ input[type="submit"]:hover { background-color: #328269; }
     width: 80%;
     margin: 0 auto;
   }
-
-  .w_33 {
-    width: 33%;
-  }
-
 }
