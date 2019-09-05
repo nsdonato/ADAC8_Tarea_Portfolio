@@ -59,12 +59,6 @@ a:visited {
   text-align: center;
 }
 
-img { 
-  width: 350px;
-  height: 250px; 
-}
-
-
 .main__title { font-size: 63px; }
 .main__avatar { width: 15%; }
 .main__subtitle { font-size: 18px; }
@@ -73,18 +67,23 @@ img {
   margin-bottom: 50px;
   padding-bottom: 50px;
   padding-top: 20px;
-  /* text-align: center; */
 }
 
 #portfolio { color: #000000; }
 
-img{
-  margin-bottom: 30px;
-}
-.portfolio__flex_content {
+.portfolio__flex__content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+
+.portfolio__flex__item img{
+  width: 350px;
+}
+
+img {
+  width: 100%; 
+  margin-bottom: 30px;
 }
 
 .portfolio__title { 
